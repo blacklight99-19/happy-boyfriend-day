@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Flappy Bird</title>
+
+  <!-- Pixel font (falls back to monospace if it can't load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CONNECTION 1: the stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- The game frame. style.css sizes it; game.js reads its id="game" for input. -->
+  <div class="game" id="game" tabindex="0" role="application"
+       aria-label="Flappy Bird game. Press space or tap to flap.">
+    <!-- game.js draws everything onto this canvas (id="c") -->
+    <canvas id="c"></canvas>
+
+    <div id="finishOverlay" class="finish-overlay">
+      <div id="finishText" class="finish-text">You Did it<br>Baby!</div>
+      <img id="finishGifImg" class="finish-gif" src="meetcute.gif" alt="">
+    </div>
+
+  <img id="finishGifSource" src="meetcute.gif" alt=""
+     style="position:absolute; left:-9999px; top:-9999px;">
+
+  <!-- CONNECTION 2: the game logic.
+       Placed after the canvas so the element exists when the script runs. -->
+       <script src="game.js"></script>
+
+</body>
+</html>
