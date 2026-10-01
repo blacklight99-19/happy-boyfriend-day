@@ -30,7 +30,7 @@
     const GAP = 148;                       // space between top and bottom pipe
     const SPAWN_EVERY = 1.6;               // seconds between pipes
     const CAP_H = 22;                      // height of the pipe cap
-    const FINISH_SCORE = 5;                // pillars to clear before the finish state — set back to 25 when done testing
+    const FINISH_SCORE = 25;                // pillars to clear before the finish state — set back to 25 when done testing
     const TEXT_DURATION = 3;               // seconds the "You did it baby!" text shows before the gif appears
     const FONT = '"Silkscreen", ui-monospace, Menlo, Consolas, monospace';
   
